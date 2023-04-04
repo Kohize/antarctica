@@ -16,14 +16,47 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container">
-        <svg src="./img/svg/cruise-logo.svg" alt="Логотип круиза" width="70" height="38">
+    <header class="header header--opened">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/svg/cruise-logo-mobile.svg">
+            <source media="(max-width: 1023px)" srcset="img/svg/cruise-logo-tablet.svg">
+            <img src="img/svg/cruise-logo.svg" alt="Логотип круиза" width="70" height="38">
+          </picture>
+        </a>
+        <nav class="header__nav">
+          <button class="header__burger">
+            <svg class="header__burger--open" width="24" height="12">
+              <use xlink:href="img/sprite.svg#burger-icon"></use>
+            </svg>
+            <svg class="header__burger--close" width="13" height="13">
+              <use xlink:href="img/sprite.svg#burger-close"></use>
+            </svg>
+          </button>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Преимущества </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Направления</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Ближайшие круизы</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <section class="intro">
-
+        <div class="intro__wrapper">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов и пингвинов</p>
+        </div>
       </section>
     </main>
     <footer>
