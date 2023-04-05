@@ -1,17 +1,17 @@
-const mainHeader = document.querySelector('.header');
+const mainNav = document.querySelector('.header__nav');
 const burgerButton = document.querySelector('.header__burger');
 
 burgerButton.addEventListener('click', function () {
-  if (mainHeader.classList.contains('header--opened')) {
-    mainHeader.classList.remove('header--opened');
-    mainHeader.classList.add('header--closed');
+  if (mainNav.classList.contains('header__nav--opened')) {
+    mainNav.classList.remove('header__nav--opened');
+    mainNav.classList.add('header__nav--closed');
   } else {
-    mainHeader.classList.add('header--opened');
-    mainHeader.classList.remove('header--closed');
+    mainNav.classList.add('header__nav--opened');
+    mainNav.classList.remove('header__nav--closed');
   }
 });
 
 if (window.innerWidth <= 767) {
-  mainHeader.classList.remove('header--opened');
-  mainHeader.classList.add('header--closed');
+  mainNav.classList.remove('header__nav--opened');
+  mainNav.classList.add('header__nav--closed');
 }

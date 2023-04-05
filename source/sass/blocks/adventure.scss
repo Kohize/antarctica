@@ -1,0 +1,63 @@
+.adventure {
+  padding: 125px 103px 140px 103px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 88px;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    padding: 100px 45px 100px 45px;
+    column-gap: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 65px 15px 85px 15px;
+    column-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.adventure__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    margin: 0 0 50px 0;
+  }
+}
+
+.adventure__wrapper h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0 0 40px 0;
+
+  @media (max-width: 1023px) {
+    font-size: 26px;
+    line-height: 140%;
+    margin: 0 0 30px 0;
+    max-width: 205px;
+  }
+}
+
+.adventure__wrapper p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0;
+}
+
+.adventure__wrapper img {
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}

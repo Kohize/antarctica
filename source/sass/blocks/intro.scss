@@ -1,28 +1,40 @@
 .intro {
-  background: url("../img/promo-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-  background-color: #011C40;
+  position: relative;
 
-  @media (max-width: 1023px) {
-    background: url("../img/promo-background-tablet.jpg");
+  &::before {
+    background: url("../img/promo-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
-    height: 638px;
+    position: absolute;
+    content: "";
+    top: -73px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #011C40;
+  }
+
+  @media (max-width: 1023px) {
+    &::before {
+      background: url("../img/promo-background-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 100%;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   @media (max-width: 767px) {
-    background: url("../img/promo-background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 100%;
-    height: 500px;
+    &::before {
+      background: url("../img/promo-background-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 100%;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

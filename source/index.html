@@ -11,21 +11,25 @@
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header header--opened">
+    <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/cruise-logo-mobile.svg">
-            <source media="(max-width: 1023px)" srcset="img/svg/cruise-logo-tablet.svg">
-            <img src="img/svg/cruise-logo.svg" alt="Логотип круиза" width="70" height="38">
-          </picture>
-        </a>
-        <nav class="header__nav">
+        <nav class="header__nav header__nav--opened">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/cruise-logo-mobile.svg">
+              <source media="(max-width: 1023px)" srcset="img/svg/cruise-logo-tablet.svg">
+              <img src="img/svg/cruise-logo.svg" alt="Логотип круиза" width="70" height="38">
+            </picture>
+          </a>
           <button class="header__burger">
             <svg class="header__burger--open" width="24" height="12">
               <use xlink:href="img/sprite.svg#burger-icon"></use>
@@ -58,9 +62,66 @@
           <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </section>
+      <section class="adventure">
+        <div class="adventure__wrapper">
+          <h2>Путешествие
+            на&nbsp;край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе
+            с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас
+            на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских
+            котиков и&nbsp;многое другое.</p>
+        </div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/adventure-mobile.jpg 1x, img/adventure-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/adventure-tablet.jpg 1x, img/adventure-tablet@2x.jpg 2x">
+          <img src="img/adventure.jpg 1x" srcset="img/adventure@2x.jpg 2x" alt="Фото пингвинов" width="560"
+            height="301">
+        </picture>
+      </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="index.html">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/svg/cruise-logo-mobile.svg">
+            <source media="(max-width: 1023px)" srcset="img/svg/cruise-logo-tablet.svg">
+            <img src="img/svg/cruise-logo.svg" alt="Логотип круиза" width="70" height="38">
+          </picture>
+        </a>
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">Преимущества</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Направления</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Ближайшие круизы</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__socials-link">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#ok-icon"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__socials-link">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#dzen"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__socials-link">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#reddit"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </footer>
   </div>
 
