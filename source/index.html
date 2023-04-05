@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Antarctica Cruise</title>
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -31,10 +31,10 @@
             </picture>
           </a>
           <button class="header__burger">
-            <svg class="header__burger--open" width="24" height="12">
+            <svg class="header__burger-open" width="24" height="12">
               <use xlink:href="img/sprite.svg#burger-icon"></use>
             </svg>
-            <svg class="header__burger--close" width="13" height="13">
+            <svg class="header__burger-close" width="13" height="13">
               <use xlink:href="img/sprite.svg#burger-close"></use>
             </svg>
           </button>
@@ -74,9 +74,39 @@
         <picture>
           <source media="(max-width: 767px)" srcset="img/adventure-mobile.jpg 1x, img/adventure-mobile@2x.jpg 2x">
           <source media="(max-width: 1023px)" srcset="img/adventure-tablet.jpg 1x, img/adventure-tablet@2x.jpg 2x">
-          <img src="img/adventure.jpg 1x" srcset="img/adventure@2x.jpg 2x" alt="Фото пингвинов" width="560"
-            height="301">
+          <img src="img/adventure.jpg" srcset="img/adventure@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
         </picture>
+      </section>
+      <section class="benefits">
+        <h2>Преимущества</h2>
+        <div class="benefits__wrapper">
+          <ul class="benefits__list">
+            <li class="benefits__card benefits__card--ship">
+              <svg width="27" height="32">
+                <use xlink:href="img/sprite.svg#ship"></use>
+              </svg>
+              <h3>Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей
+                и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="benefits__card benefits__card--inclusive">
+              <svg width="38" height="32">
+                <use xlink:href="img/sprite.svg#inclusive"></use>
+              </svg>
+              <h3>Система<br>все включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе "Все Включено".<br>Великолепные блюда
+                и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="benefits__card benefits__card--boat">
+              <svg width="44" height="32">
+                <use xlink:href="img/sprite.svg#boat"></use>
+              </svg>
+              <h3>Экскурсионные туры на Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                c&nbsp;опытными экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">

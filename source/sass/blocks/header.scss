@@ -48,15 +48,15 @@
   display: none;
 }
 
-.header__nav--closed .header__burger--close {
+.header__nav--closed .header__burger-close {
   display: none;
 }
 
-.header__nav--opened .header__burger--open {
+.header__nav--opened .header__burger-open {
   display: none;
 }
 
-.header__nav--opened .header__burger--close {
+.header__nav--opened .header__burger-close {
   display: none;
 
   @media (max-width: 767px) {

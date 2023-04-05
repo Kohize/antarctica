@@ -1,0 +1,120 @@
+.benefits {
+  background: url("../img/benefits-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  padding: 109px 103px 106px 103px;
+
+  @media (max-width: 1023px) {
+    padding: 90px 45px 100px 45px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 55px 15px 55px 15px;
+  }
+}
+
+.benefits h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+  text-align: center;
+  margin: 0 0 50px 0;
+
+  @media (max-width: 1023px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+  }
+}
+
+.benefits__wrapper {
+  margin: 0 auto;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  column-gap: 41px;
+
+  @media (max-width: 1023px) {
+    column-gap: 26px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+}
+
+.benefits__card {
+  background-color: #F9FBFD;
+  padding: 30px 30px 50px 30px;
+
+  @media (max-width: 1023px) {
+    padding: 26px 20px 25px 20px;
+  }
+}
+
+.benefits__card svg {
+  margin: 0 0 10px 0;
+}
+
+.benefits__card h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0 0 8px 0;
+
+  @media (max-width: 767px) {
+    max-width: 170px;
+  }
+}
+
+.benefits__card p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #011C40;
+  max-width: 288px;
+  margin: 0;
+
+  @media (max-width: 767px) {
+    max-width: 248px;
+  }
+}
+
+.benefits__card--ship svg {
+  @media (max-width: 1023px) {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+.benefits__card--inclusive svg {
+  @media (max-width: 1023px) {
+    width: 27px;
+    height: 26px;
+  }
+}
+
+.benefits__card--boat svg {
+  @media (max-width: 1023px) {
+    width: 36px;
+    height: 26px;
+  }
+}
