@@ -1572,7 +1572,8 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
-  padding: 109px 103px 106px 103px;
+  padding: 109px 103px 118px 103px;
+  margin: 0 0 86px 0;
 }
 
 .benefits h2 {
@@ -1631,6 +1632,336 @@ button,
   color: #011C40;
   max-width: 288px;
   margin: 0;
+}
+
+.cruise {
+  margin: 0 0 100px 0;
+  padding: 0 118px;
+}
+
+.cruise h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0 auto 48px;
+  max-width: 302px;
+  width: 100%;
+}
+
+.cruise__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (23%)[4];
+  grid-template-columns: repeat(4, 23%);
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1130px;
+}
+
+.cruise__item {
+  background-color: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  position: relative;
+}
+
+.cruise__item:hover .cruise__image,
+.cruise__item:focus-within .cruise__image {
+  display: none;
+}
+
+.cruise__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cruise__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise__image h3 {
+  position: absolute;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  left: 30px;
+  bottom: 22px;
+}
+
+.cruise__content:hover .cruise__image {
+  display: none;
+}
+
+.cruise__content {
+  min-height: 386px;
+}
+
+.cruise__text {
+  overflow-y: scroll;
+  min-height: 298px;
+  max-height: 298px;
+  padding: 29px 0 0 25px;
+}
+
+.cruise__content h3 {
+  margin: 0 0 14px 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+}
+
+.cruise__content h4 {
+  margin: 0 0 1px 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #F9FBFD;
+}
+
+.cruise__content p {
+  margin: 0 0 12px 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #D8D8D9;
+}
+
+.cruise__button {
+  padding: 13px 5px 0 5px;
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.cruise__content-link {
+  max-width: 210px;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  text-align: center;
+  background: #F9FBFD;
+  border: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011C40;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0 15px 0;
+}
+
+.cruise__content-link:hover,
+.cruise__content-link:focus {
+  background: #add8e6;
+}
+
+.booking {
+  background: url("../img/form-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  min-height: 555px;
+  padding: 0 163px;
+}
+
+.booking__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 144px;
+  padding: 50px 0;
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.booking__title {
+  width: 100%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.booking__title h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0 0 30px 0;
+}
+
+.booking__title p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0;
+  max-width: 352px;
+}
+
+.booking__form {
+  width: 403px;
+  height: 455px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  padding: 50px;
+}
+
+.booking__form h2 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  margin: 0 0 35px 0;
+}
+
+.booking__input input {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 303px;
+  height: 43px;
+  border: 0;
+  padding: 0 0 0 16px;
+}
+
+.booking__input input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking__input input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking__input input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking__input input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking__input input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking__input input:hover,
+.booking__input input:focus {
+  outline: 1px solid #add8e6;
+}
+
+.booking__input {
+  margin: 0 0 20px 0;
+}
+
+.booking__input--email {
+  margin: 0 0 25px 0;
+}
+
+.booking__input--checkbox {
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.booking__input--checkbox label {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  color: #F9FBFD;
+  padding: 0 0 0 23px;
+}
+
+.booking__input--checkbox input {
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  cursor: pointer;
+}
+
+.booking__input--checkbox input:checked ~ .booking__checkbox::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 4px;
+  width: 10px;
+  height: 6px;
+  background-image: url("../img/svg/form-vector.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.booking__input--checkbox input:focus ~ .booking__checkbox {
+  outline: 1px solid #add8e6;
+}
+
+.booking__checkbox {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 5px;
+  background: #F9FBFD;
+  cursor: pointer;
+}
+
+.booking__button button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  width: 303px;
+  height: 43px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.booking__button button:hover,
+.booking__button button:focus {
+  background: #add8e6;
+  outline: 0;
 }
 
 /* @mixin hover-focus {
@@ -1763,11 +2094,7 @@ button,
   }
 
   .benefits {
-    padding: 90px 45px 100px 45px;
-  }
-
-  .benefits {
-    padding: 55px 15px 55px 15px;
+    padding: 92px 45px 100px 45px;
   }
 
   .benefits h2 {
@@ -1797,6 +2124,127 @@ button,
   .benefits__card--boat svg {
     width: 36px;
     height: 26px;
+  }
+
+  .cruise {
+    padding: 0 60px;
+  }
+
+  .cruise h2 {
+    font-size: 26px;
+    max-width: 281px;
+  }
+
+  .cruise__list {
+    -ms-grid-columns: (47.6%)[2];
+    grid-template-columns: repeat(2, 47.6%);
+    max-width: auto;
+  }
+
+  .cruise__image h3 {
+    left: 35px;
+    bottom: 27px;
+  }
+
+  .cruise__text {
+    padding: 29px 0 0 36px;
+  }
+
+  .cruise__content p {
+    max-width: 208px;
+  }
+
+  .cruise__button {
+    max-width: 240px;
+  }
+
+  .cruise__content-link {
+    min-width: 239px;
+    max-width: 100%;
+  }
+
+  .booking {
+    background: url("../img/form-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 184px 0 177px;
+    min-height: 805px;
+  }
+
+  .booking__wrapper {
+    padding: 88px 0;
+    min-width: 419px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .booking__title {
+    margin: 0 0 53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .booking__title h2 {
+    font-size: 34px;
+    margin: 0 0 4px 0;
+  }
+
+  .booking__title p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .booking__form {
+    width: 100%;
+    min-width: 403px;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    padding: 44px 60px 57px 56px;
+    display: -ms-grid;
+    display: grid;
+  }
+
+  .booking__form form {
+    width: 100%;
+  }
+
+  .booking__form h2 {
+    margin: 0 0 27px 0;
+  }
+
+  .booking__input input {
+    min-width: 303px;
+    width: 100%;
+  }
+
+  .booking__input--email {
+    margin: 0 0 16px 0;
+  }
+
+  .booking__input--checkbox {
+    margin: 0 0 28px 0;
+  }
+
+  .booking__button button {
+    min-width: 303px;
+    width: 100%;
   }
 }
 
@@ -1986,6 +2434,11 @@ button,
     padding: 0;
   }
 
+  .benefits {
+    padding: 55px 15px 55px 15px;
+    margin: 0 0 64px 0;
+  }
+
   .benefits h2 {
     margin: 0 0 30px 0;
     font-size: 24px;
@@ -2003,6 +2456,94 @@ button,
 
   .benefits__card p {
     max-width: 248px;
+  }
+
+  .cruise {
+    padding: 0 25px;
+    margin: 0 0 65px 0;
+  }
+
+  .cruise h2 {
+    font-size: 24px;
+    max-width: 260px;
+    margin: 0 auto 30px;
+  }
+
+  .cruise__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cruise__image h3 {
+    left: 25px;
+    bottom: 17px;
+  }
+
+  .cruise__text {
+    padding: 30px 0 0 25px;
+  }
+
+  .cruise__button {
+    max-width: 220px;
+  }
+
+  .cruise__content-link {
+    min-width: 220px;
+  }
+
+  .booking {
+    background: url("../img/form-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 15px;
+  }
+
+  .booking__wrapper {
+    min-width: 290px;
+    padding: 60px 0 0 0;
+  }
+
+  .booking__title {
+    margin: 0 0 34px 0;
+  }
+
+  .booking__title h2 {
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    max-width: 194px;
+    margin: 0 0 12px 0;
+  }
+
+  .booking__title p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 257px;
+  }
+
+  .booking__form {
+    width: 100%;
+    min-width: 290px;
+    padding: 34px 30px 32px 30px;
+  }
+
+  .booking__form h2 {
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .booking__input input {
+    min-width: 230px;
+  }
+
+  .booking__input--checkbox label {
+    display: block;
+    max-width: 177px;
+    padding: 0 0 0 29px;
+  }
+
+  .booking__button button {
+    min-width: 230px;
   }
 }
 
