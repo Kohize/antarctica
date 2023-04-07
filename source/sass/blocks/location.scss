@@ -1,0 +1,151 @@
+.location {
+  padding: 120px 81px;
+  max-width: 1323px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 7%;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    padding: 100px 45px;
+    column-gap: 15px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 58px 15px 66px 15px;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+.location img {
+  @media (max-width: 1023px) {
+    width: 324px;
+    height: 335px;
+  }
+
+  @media (max-width: 767px) {
+    height: 316px;
+    position: absolute;
+    z-index: -1;
+    width: 290px;
+  }
+}
+
+.location__iframe {
+  position: absolute;
+  top: 120px;
+  left: 81px;
+
+  @media (max-width: 1023px) {
+    width: 324px;
+    height: 335px;
+    top: 100px;
+    left: 45px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    position: static;
+    height: 316px;
+    left: 15px;
+    top: 322px;
+  }
+}
+
+.location__contacts {
+  padding: 75px 0 0 0;
+
+  @media (max-width: 1023px) {
+    padding: 65px 0 0 0;
+  }
+
+  @media (max-width: 767px) {
+    order: -1;
+    padding: 0;
+    margin: 0 0 35px 0;
+  }
+}
+
+.location__contacts h1 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  max-width: 500px;
+  margin: 0 0 32px 0;
+
+  @media (max-width: 1023px) {
+    max-width: 324px;
+    margin: 0 0 28px 0;
+  }
+
+  @media (max-width: 1023px) {
+    min-width: 290px;
+    max-width: 100%;
+    margin: 0 0 28px 0;
+  }
+}
+
+.location__adress-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 0 21px 0;
+
+  @media (max-width: 1023px) {
+    position: relative;
+  }
+}
+
+.location__adress-wrapper svg {
+  @media (max-width: 1023px) {
+    position: absolute;
+    top: 5px;
+  }
+}
+
+.location__adress-wrapper p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+  padding: 0 0 0 10px;
+  margin: 0;
+
+  @media (max-width: 1023px) {
+    max-width: 285px;
+    padding: 0 0 0 28px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    min-width: 290px;
+  }
+}
+
+.location__phone-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.location__phone {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #011C40;
+  padding: 0 0 0 10px;
+
+  &:hover,
+  &:focus {
+    color: #add8e6;
+  }
+}

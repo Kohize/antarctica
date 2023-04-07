@@ -38,6 +38,7 @@
 
 .benefits__wrapper {
   margin: 0 auto;
+  max-width: 1366px;
 }
 
 .benefits__list {
@@ -97,6 +98,10 @@
 
   @media (max-width: 767px) {
     max-width: 248px;
+  }
+
+  @media (min-width: 340px) and (max-width: 767px) {
+    max-width: 100%;
   }
 }
 
