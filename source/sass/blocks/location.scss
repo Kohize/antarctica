@@ -1,11 +1,11 @@
 .location {
-  padding: 120px 81px;
-  max-width: 1323px;
+  padding: 120px 103px;
+  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 7%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8.6%;
   position: relative;
 
   @media (max-width: 1023px) {
@@ -22,6 +22,9 @@
 }
 
 .location img {
+  position: absolute;
+  z-index: -1;
+
   @media (max-width: 1023px) {
     width: 324px;
     height: 335px;
@@ -29,16 +32,14 @@
 
   @media (max-width: 767px) {
     height: 316px;
-    position: absolute;
-    z-index: -1;
     width: 290px;
   }
 }
 
 .location__iframe {
-  position: absolute;
   top: 120px;
   left: 81px;
+  grid-column: 1;
 
   @media (max-width: 1023px) {
     width: 324px;

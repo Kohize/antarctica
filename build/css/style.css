@@ -1448,6 +1448,9 @@ button,
   margin: 0 auto;
   padding: 50px 103px;
   max-width: 1366px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -1503,8 +1506,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 0 349px;
-  padding: 10px 0 0 0;
+  margin: 0 0 0 auto;
+  padding: 10px 4px 0 0;
 }
 
 .footer__socials-link {
@@ -1971,24 +1974,30 @@ button,
 }
 
 .location {
-  padding: 120px 81px;
-  max-width: 1323px;
+  padding: 120px 103px;
+  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-  grid-template-columns: 50% 50%;
-  -webkit-column-gap: 7%;
-  -moz-column-gap: 7%;
-  column-gap: 7%;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 8.6%;
+  -moz-column-gap: 8.6%;
+  column-gap: 8.6%;
   position: relative;
 }
 
-.location__iframe {
+.location img {
   position: absolute;
+  z-index: -1;
+}
+
+.location__iframe {
   top: 120px;
   left: 81px;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 .location__contacts {
@@ -2736,8 +2745,6 @@ button,
 
   .location img {
     height: 316px;
-    position: absolute;
-    z-index: -1;
     width: 290px;
   }
 
