@@ -31,5 +31,6 @@ document.addEventListener('click', (e) => {
   if (!mainNav.contains(e.target)) {
     mainNav.classList.remove('header__nav--opened');
     mainNav.classList.add('header__nav--closed');
+    document.body.classList.remove('scroll-lock');
   }
 });
