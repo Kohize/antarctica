@@ -1,5 +1,5 @@
 .benefits {
-  background: url("../img/benefits-background.png");
+  background: url("../img/benefits-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
@@ -8,10 +8,18 @@
 
   @media (max-width: 1023px) {
     padding: 92px 45px 100px 45px;
+    background: url("../img/benefits-background-tablet.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
   }
 
   @media (max-width: 767px) {
     padding: 55px 15px 55px 15px;
+    background: url("../img/benefits-background-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
     margin: 0 0 64px 0;
   }
 }
