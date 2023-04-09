@@ -1574,6 +1574,7 @@ button,
 
 .benefits {
   background: url("../img/benefits-background.webp");
+  background-color: #e3ecf6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 100%;
@@ -1794,6 +1795,7 @@ button,
 .booking {
   background: url("../img/form-background.webp");
   background-repeat: no-repeat;
+  background-color: #e3e3e3;
   background-size: cover;
   background-position: 50% 100%;
   min-height: 555px;
@@ -2108,7 +2110,9 @@ button,
     background-size: cover;
     background-position: 50% 100%;
   }
+}
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
   .booking {
     background: url("../img/form-background@2x.webp");
     background-repeat: no-repeat;

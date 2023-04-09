@@ -1,12 +1,13 @@
 .booking {
   background: url("../img/form-background.webp");
   background-repeat: no-repeat;
+  background-color: #e3e3e3;
   background-size: cover;
   background-position: 50% 100%;
   min-height: 555px;
   padding: 0 163px;
 
-  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) and (min-width: 1024px)  {
     background: url("../img/form-background@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
