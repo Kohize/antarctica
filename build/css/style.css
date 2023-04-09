@@ -1309,6 +1309,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  max-width: 38px;
 }
 
 .header__nav--closed .header__list {
@@ -1363,6 +1364,7 @@ button,
   -moz-column-gap: 33px;
   column-gap: 33px;
   row-gap: 20px;
+  z-index: 2;
 }
 
 .header__item {
@@ -1509,6 +1511,8 @@ button,
   display: flex;
   margin: 0 0 0 auto;
   padding: 10px 4px 0 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__socials-link {
@@ -1609,6 +1613,7 @@ button,
   -webkit-column-gap: 41px;
   -moz-column-gap: 41px;
   column-gap: 41px;
+  row-gap: 10px;
 }
 
 .benefits__card {
@@ -2471,7 +2476,7 @@ button,
     background-color: #f9fbfd;
     padding: 85px 30px 0 19px;
     margin-left: 35px;
-    min-height: 568px;
+    min-height: 100%;
     right: 0;
     z-index: 2;
     top: 0;
