@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-height:  38px;
+  max-height: 38px;
 
   @media (max-width: 767px) {
     max-width: 283px;
@@ -142,7 +142,7 @@
 }
 
 .header__list::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .header__item {
