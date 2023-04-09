@@ -19,7 +19,7 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0 auto 48px;
   max-width: 302px;
   width: 100%;
@@ -37,7 +37,6 @@
 }
 
 .cruise__list {
-  margin: 0;
   padding: 0;
   list-style-type: none;
   display: grid;
@@ -59,8 +58,8 @@
 }
 
 .cruise__item {
-  background-color: #011C40;
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  background-color: #011c40;
+  box-shadow: rgba(1, 28, 64, 0.15);
   position: relative;
 }
 
@@ -75,7 +74,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-
 }
 
 .cruise__image img {
@@ -91,13 +89,18 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   left: 30px;
   bottom: 22px;
+
+  @media (max-width: 1200px) {
+    padding: 0 2px;
+  }
 
   @media (max-width: 1023px) {
     left: 35px;
     bottom: 27px;
+    padding: 0;
   }
 
   @media (max-width: 767px) {
@@ -142,7 +145,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruise__content h4 {
@@ -152,7 +155,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruise__content p {
@@ -161,7 +164,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  color: #D8D8D9;
+  color: #d8d8d9;
 
   @media (max-width: 1023px) {
     max-width: 208px;
@@ -188,14 +191,14 @@
   margin: 0 auto;
   height: 40px;
   text-align: center;
-  background: #F9FBFD;
+  background: #f9fbfd;
   border: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   cursor: pointer;
   display: block;
   padding: 10px 0 15px 0;

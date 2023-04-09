@@ -87,7 +87,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0 0 6px 0;
 
   @media (max-width: 1023px) {
@@ -112,7 +112,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   max-width: 352px;
 
@@ -132,8 +132,8 @@
   width: 403px;
   height: 455px;
   align-self: center;
-  background: #011C40;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  box-shadow: rgba(1, 28, 64, 0.15);
   padding: 44px 50px 50px 50px;
 
   @media (max-width: 1023px) {
@@ -163,7 +163,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   margin: 0 0 27px 0;
 
   @media (max-width: 1023px) {
@@ -232,7 +232,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 130%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   padding: 0 0 0 23px;
 
   @media (max-width: 767px) {
@@ -250,10 +250,9 @@
   z-index: 2;
   top: 5px;
   cursor: pointer;
-
 }
 
-.booking__input--checkbox input:checked~.booking__checkbox::before {
+.booking__input--checkbox input:checked ~ .booking__checkbox::before {
   position: absolute;
   content: "";
   top: 6px;
@@ -265,7 +264,7 @@
   background-size: cover;
 }
 
-.booking__input--checkbox input:focus~.booking__checkbox {
+.booking__input--checkbox input:focus ~ .booking__checkbox {
   outline: 1px solid #add8e6;
 }
 
@@ -275,7 +274,7 @@
   height: 18px;
   left: 0;
   top: 5px;
-  background: #F9FBFD;
+  background: #f9fbfd;
   cursor: pointer;
 }
 

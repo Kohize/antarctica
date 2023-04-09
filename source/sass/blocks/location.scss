@@ -8,16 +8,20 @@
   column-gap: 8.6%;
   position: relative;
 
+  @media (max-width: 1200px) {
+    max-width: 1015px;
+    padding: 120px 0;
+  }
+
   @media (max-width: 1023px) {
     padding: 100px 45px;
-    column-gap: 15px;
+    column-gap: 4%;
   }
 
   @media (max-width: 767px) {
     padding: 58px 15px 66px 15px;
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -71,13 +75,13 @@
   }
 }
 
-.location__contacts h1 {
+.location__contacts h2 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   max-width: 500px;
   margin: 0 0 32px 0;
 
@@ -116,7 +120,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   padding: 0 0 0 10px;
   margin: 0;
 
@@ -142,7 +146,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   padding: 0 0 0 10px;
 
   &:hover,
