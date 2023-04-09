@@ -375,25 +375,29 @@
               за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда
               и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
-          <div class="booking__form">
+          <div class="booking__form" data-form-validate data-callback="base">
             <h2>Оставьте заявку
               и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
               в&nbsp;ближайшее время</h2>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="booking__input booking__input--name">
+              <div class="booking__input booking__input--name" data-validate-type="text" data-required
+              data-message-base="Поле обязательно к заполнению">
                 <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Имя" required>
+                <input type="text" id="name" name="name" placeholder="Имя">
               </div>
-              <div class="booking__input booking__input--phone">
+              <div class="booking__input booking__input--phone" data-validate-type="phone" data-required
+              data-message-base="Поле обязательно к заполнению">
                 <label for="phone"></label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон">
               </div>
-              <div class="booking__input booking__input--email">
+              <div class="booking__input booking__input--email" data-validate-type="email" data-required
+              data-message-base="Поле обязательно к заполнению">
                 <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" placeholder="Email">
               </div>
-              <div class="booking__input booking__input--checkbox">
-                <input type="checkbox" id="agree" name="agree" required>
+              <div class="booking__input booking__input--checkbox" data-validate-type="checkbox" data-required
+              data-message-base="Поле обязательно к заполнению">
+                <input type="checkbox" id="agree" name="agree">
                 <label for="agree">Я согласен на обработку моих персональных данных</label>
                 <span class="booking__checkbox"></span>
               </div>
