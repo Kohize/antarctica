@@ -2296,6 +2296,12 @@ button,
     max-width: auto;
   }
 
+  .cruise__item {
+    -ms-grid-columns: (47.6%)[2];
+    grid-template-columns: repeat(2, 47.6%);
+    max-width: auto;
+  }
+
   .cruise__image h3 {
     left: 35px;
     bottom: 27px;
@@ -2707,8 +2713,17 @@ button,
   }
 
   .cruise__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .cruise__item {
+    min-height: 84vw;
   }
 
   .cruise__image h3 {
@@ -2907,6 +2922,12 @@ button,
 @media (min-width: 340px) and (max-width: 767px) {
   .benefits__card p {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+  .cruise__button {
+    padding: 19% 5px 0 5px;
   }
 }
 

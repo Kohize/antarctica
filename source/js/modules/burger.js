@@ -3,7 +3,7 @@ const burgerButton = document.querySelector('.header__burger');
 const burgerLink = document.querySelectorAll('.header__link');
 
 burgerButton.addEventListener('click', function () {
-  if (mainNav.classList.contains('header__nav--opened')) {
+  if (mainNav.classList.contains('header__nav--opened') && mainNav && burgerButton) {
     mainNav.classList.remove('header__nav--opened');
     mainNav.classList.add('header__nav--closed');
     document.body.classList.remove('scroll-lock');
@@ -14,21 +14,20 @@ burgerButton.addEventListener('click', function () {
   }
 });
 
-if (window.innerWidth <= 767) {
+if (window.innerWidth <= 767 && mainNav && burgerButton && burgerLink) {
   mainNav.classList.remove('header__nav--opened');
   mainNav.classList.add('header__nav--closed');
+  burgerLink.forEach((element) => {
+    element.addEventListener('click', function () {
+      mainNav.classList.remove('header__nav--opened');
+      mainNav.classList.add('header__nav--closed');
+      document.body.classList.remove('scroll-lock');
+    });
+  });
 }
 
-burgerLink.forEach((element) => {
-  element.addEventListener('click', function () {
-    mainNav.classList.remove('header__nav--opened');
-    mainNav.classList.add('header__nav--closed');
-    document.body.classList.remove('scroll-lock');
-  });
-});
-
 document.addEventListener('click', (e) => {
-  if (!mainNav.contains(e.target)) {
+  if (!mainNav.contains(e.target) && mainNav && burgerButton && window.innerWidth <= 767) {
     mainNav.classList.remove('header__nav--opened');
     mainNav.classList.add('header__nav--closed');
     document.body.classList.remove('scroll-lock');
