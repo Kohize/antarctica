@@ -12,6 +12,10 @@
   @media (max-width: 767px) {
     padding: 133px 0 234px 15px;
   }
+
+  @media (min-width: 439px) and (max-width: 767px) {
+    padding: 133px 0 279px 15px;
+  }
 }
 
 .intro__wrapper h1 {
@@ -53,5 +57,10 @@
   @media (max-width: 767px) {
     font-size: 16px;
     line-height: 140%;
+    max-width: 220px;
+  }
+
+  @media (min-width: 350px) and (max-width: 767px) {
+    max-width: unset;
   }
 }

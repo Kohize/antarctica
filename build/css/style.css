@@ -608,6 +608,15 @@ button,
   /* stylelint-enable */
 }
 
+.overlay-active {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1407,7 +1416,7 @@ button,
 }
 
 .header__link:hover {
-  color: #011c40;
+  color: #add8e6;
 }
 
 .intro__wrapper {
@@ -2518,7 +2527,7 @@ button,
     background-position: 50% 100%;
     width: 100%;
     height: 500px;
-    top: -55px;
+    top: 0;
   }
 
   .container {
@@ -2609,6 +2618,10 @@ button,
     height: 44px;
   }
 
+  .header__logo {
+    padding: 0;
+  }
+
   .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2646,6 +2659,7 @@ button,
   .intro__wrapper p {
     font-size: 16px;
     line-height: 140%;
+    max-width: 220px;
   }
 
   .footer {
@@ -2968,6 +2982,18 @@ button,
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 439px) and (max-width: 767px) {
+  .intro__wrapper {
+    padding: 133px 0 279px 15px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .intro__wrapper p {
+    max-width: unset;
   }
 }
 
