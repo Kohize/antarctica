@@ -101,7 +101,6 @@
     font-size: 24px;
     line-height: 130%;
     text-align: center;
-    max-width: 194px;
     margin: 0 0 12px 0;
     white-space: unset;
   }
@@ -126,6 +125,10 @@
     font-size: 16px;
     line-height: 140%;
     max-width: 257px;
+  }
+
+  @media (min-width: 340px) and (max-width: 767px) {
+    min-width: 100%;
   }
 }
 
@@ -235,6 +238,7 @@
   line-height: 130%;
   color: #f9fbfd;
   padding: 0 0 0 23px;
+  cursor: pointer;
 
   @media (max-width: 767px) {
     display: block;
@@ -289,6 +293,8 @@
   font-size: 14px;
   line-height: 150%;
   cursor: pointer;
+  background: #f9fbfd;
+  color: #011c40;
 
   @media (max-width: 1023px) {
     min-width: 303px;

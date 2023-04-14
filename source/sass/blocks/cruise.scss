@@ -1,6 +1,5 @@
 .cruise {
   margin: 0 0 120px 0;
-  padding: 0 118px;
 
   @media (max-width: 1023px) {
     padding: 0 60px;
@@ -39,8 +38,9 @@
 .cruise__list {
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(4, 23%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 30px;
   column-gap: 30px;
   width: 100%;
@@ -125,6 +125,24 @@
 
 .cruise__content {
   min-height: 386px;
+  height: 28vw;
+  width: 19vw;
+  max-width: 260px;
+  max-height: 386px;
+
+  @media (max-width: 1200px) {
+    min-width: 230px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 40vw;
+    max-width: unset;
+    max-height: unset;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .cruise__text {

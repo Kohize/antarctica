@@ -138,6 +138,10 @@
 .location__phone-wrapper {
   display: flex;
   align-items: center;
+
+  @media (max-width: 1023px) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .location__phone {
