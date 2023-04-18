@@ -19,7 +19,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 58px 15px 66px 15px;
+    padding: 58px 15px 45px 15px;
     display: flex;
     flex-direction: column;
   }
@@ -138,6 +138,7 @@
 .location__phone-wrapper {
   display: flex;
   align-items: center;
+  margin: 0 0 20px 0;
 
   @media (max-width: 1023px) {
     margin: 0 0 20px 0;

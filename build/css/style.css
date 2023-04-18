@@ -1469,6 +1469,7 @@ button,
 .footer__logo {
   margin: 0 40px 0 0;
   padding: 50px 0 50px 0;
+  max-height: 138px;
 }
 
 .footer__logo img {
@@ -1529,6 +1530,8 @@ button,
 
 .footer__socials-link {
   color: #f9fbfd;
+  max-height: 20px;
+  max-width: 20px;
 }
 
 .footer__socials-link:not(:last-child) {
@@ -2072,6 +2075,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 0 20px 0;
 }
 
 .location__phone {
@@ -2332,7 +2336,7 @@ button,
 
   .cruise {
     padding: 0 60px;
-    margin: 0 0 100px 0;
+    margin: 0 0 103px 0;
   }
 
   .cruise h2 {
@@ -2360,8 +2364,10 @@ button,
 
   .cruise__content {
     width: 40vw;
+    height: 50.2vw;
     max-width: unset;
     max-height: unset;
+    min-height: unset;
   }
 
   .cruise__text {
@@ -2680,10 +2686,15 @@ button,
 
   .footer__logo {
     margin: 0 0 22px 0;
+    padding: 0;
   }
 
   .footer__logo img {
     width: auto;
+  }
+
+  .footer__nav {
+    padding: 0;
   }
 
   .footer__list {
@@ -2705,6 +2716,7 @@ button,
   .footer__socials {
     margin: 0;
     padding: 0;
+    max-width: 106px;
   }
 
   .footer__socials-link:not(:last-child) {
@@ -2796,6 +2808,7 @@ button,
 
   .cruise__content {
     width: 100%;
+    min-height: 386px;
   }
 
   .cruise__text {
@@ -2867,7 +2880,7 @@ button,
   }
 
   .location {
-    padding: 58px 15px 66px 15px;
+    padding: 58px 15px 45px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

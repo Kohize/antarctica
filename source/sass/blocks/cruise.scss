@@ -3,7 +3,7 @@
 
   @media (max-width: 1023px) {
     padding: 0 60px;
-    margin: 0 0 100px 0;
+    margin: 0 0 103px 0;
   }
 
   @media (max-width: 767px) {
@@ -136,12 +136,15 @@
 
   @media (max-width: 1023px) {
     width: 40vw;
+    height: 50.2vw;
     max-width: unset;
     max-height: unset;
+    min-height: unset;
   }
 
   @media (max-width: 767px) {
     width: 100%;
+    min-height: 386px;
   }
 }
 
